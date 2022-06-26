@@ -11,7 +11,8 @@ h1,h2,h3,h4,h5,h5 {
 /* common nav styles */
 .navigation-wrapper {
   height: 190px;
-  background-color: #11122b;
+  /* background-color: #11122b; */
+  background-color: #003074;
   color: #dadada;
   /* flexbox container */
   display: flex;
@@ -44,6 +45,11 @@ h1,h2,h3,h4,h5,h5 {
   font-family: 'Ubuntu Condensed', sans-serif;
   color: #858585;
   font-size: .8em;
+  transition: .8s;
+}
+
+.left-column > .contact-hours-wrapper > .hours:hover {
+  color: #ffc53d;
 }
 
 .links-wrapper > .nav-link a {
@@ -88,7 +94,7 @@ h1,h2,h3,h4,h5,h5 {
 }
 
 .links-wrapper > .nav-link a:hover {
-  color: #cea135;
+  color: #ffc53d;
   letter-spacing: 2px;
 }
 
@@ -111,7 +117,7 @@ h1,h2,h3,h4,h5,h5 {
 }
 
 .right-column > .address-wrapper a:hover {
-  color: #cea135; 
+  color: #ffc53d; 
 }
 
 .right-column > .contact-icon {
@@ -125,7 +131,7 @@ h1,h2,h3,h4,h5,h5 {
 }
 
 .right-column > .contact-icon a:hover {
-  color: #cea135;
+  color: #ffc53d;
 }
 
 /* hero section */
@@ -141,7 +147,8 @@ h1,h2,h3,h4,h5,h5 {
 
 .hero-section > .top-heading {
   padding: 1px 20px;
-  background-color: #11122b;
+  /* background-color: #11122b; */
+  background-color: #003074;
   color: #dadada;
   width: 290px;
   border-radius: 2px;
@@ -149,8 +156,9 @@ h1,h2,h3,h4,h5,h5 {
 
 .hero-section > .bottom-heading {
   padding: 1px 20px;
-  background-color: #cea135;
-  color: #11122b;
+  background-color: #ffc53d;
+  /* color: #11122b; */
+  color: #173356;
   margin-top: 15px;
   width: 107px;
   border-radius: 2px;
@@ -160,7 +168,8 @@ h1,h2,h3,h4,h5,h5 {
 .features-section {
   height: 400px;
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('/port_1/images/cktpcb.jpg');
-  background-color: #11122b;
+  /* background-color: #11122b; */
+  background-color: #003074;
   border-top: 10px solid white;
   color: #dadada;
   display: flex;
@@ -207,4 +216,76 @@ h1,h2,h3,h4,h5,h5 {
 
 .columns-wrapper > .column :nth-child(3) {
   letter-spacing: 2px;
+}
+
+/* footer styles */
+.footer {
+  background-color: #003074;
+  color: #dadada;
+  font-family: "Ubuntu Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin-top: -4px;
+}
+
+.footer > .footer-logo img {
+  width: 300px;
+  height: 100%;
+  padding-bottom: 1em;
+  /* filter: brightness(50%); */
+  opacity: .8;
+}
+
+.footer > .footer-phone-hours span {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+.footer > .footer-phone-hours > .hours {
+  font-size: .8em;
+  color: #ffc53d;
+  text-transform: uppercase;
+}
+
+.footer > .links-wrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 400px;
+}
+
+.footer > .social-media-icons-wrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer > .social-media-icons-wrapper a {
+  font-size: 1.5em;
+  color: #dadada;
+  transition: .5s;
+}
+
+.footer > .social-media-icons-wrapper a:hover {
+  color: #ffc53d;
+}
+
+.footer > .copyright-wrapper a {
+  margin-bottom: 42px;
+  font-size: 1em;
+  letter-spacing: 3px;
+  color: #b4b4b4;
+  text-decoration: none;
+  transition: .7s;
+}
+
+.footer > .copyright-wrapper a:hover {
+  color: #ffc53d;
 }
